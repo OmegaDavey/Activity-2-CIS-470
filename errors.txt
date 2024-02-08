@@ -1,0 +1,14 @@
+------TASK 3 & 4 --------
+Line 72: "let taxableIncome = income + getDeductions" should be "let taxableIncome = income - getDeductions", as the deductions are subtracted from the income to get the taxable income.
+Line 91: "let stateTaxableIncome = income + getDeductions" should be "let stateTaxableIncome = income - getDeductions" as the deductions are subtracted from the income to get the taxable income.
+Line 77: "federalTax += (taxableIncome - taxBrackets[1].lowerBound)" should be "federalTax += (taxableIncome - taxBrackets[i].lowerBound)" as the tax brackets are iterated through.
+Line 80: "federalTax += (taxBrackets[i].upperBound - taxBrackets[1].lowerBound)" should be "federalTax += (taxBrackets[i].upperBound - taxBrackets[i].lowerBound)" as the tax brackets are itereated through
+Line 126: "deductions += mortgage + studentLoan - medicalExpenses" should be "deductions += mortgage + studentLoan + medicalExpenses" as your med should be added to your total deductions
+Line 94: Added a statement to check if your state tax is lower than 0, and if so set it to 0 so on your output you dont have negative taxes.
+
+-----TASK 5-------
+I didnt use breakpoints at all, I just manually tested each case and made assumptions on what the issue could be and made a list of possible sections I may find errors in, I have never used breakpoints or watch before so I have no idea how to use them in VSCode. Using the list of possible points of error I went back through the test cases and would change signs and check for possible mistakes, such as the static value in errors 1 & 2, and fixed them in that manner
+
+The specifications for the program didnt really describe how it was supposed to work but it gave you all the tools in order to fix/implement the needed changes to make the program work and match the test cases. The only issue is that I do not know how taxes work so figuring out that some things needed to be subtacted and how the tax brackets worked was a little hard in the beginning.
+
+NOTE: Test 3 Should have been a student loan calculation of 1000, not 10000, as 1000 gives you the correct values without changing anything

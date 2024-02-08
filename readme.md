@@ -55,21 +55,21 @@ Important: The program is hypothetical and the numbers are just for debugging pu
     - State Tax Owed: $nn.nn
 
 ### Examples of correct calculations (test cases):
-- t1: input: {income: 60000, filingStatus: "Individual", mortgage:0, studentLoad:0, medicalExpenses:0} => output {federalTax: 6799.66, stateTax:2500}
+- t1: input: {income: 60000, filingStatus: "Individual", mortgage:0, studentLoad:0, medicalExpenses:0} => output {federalTax: 6799.66, stateTax:2500} WORKS
 
-- t2: input: {income: 1000000, filingStatus: "Joint", mortgage:0, studentLoad:0, medicalExpenses:0} => output {federalTax: 270799.10, stateTax:49250.00}
+- t2: input: {income: 1000000, filingStatus: "Joint", mortgage:0, studentLoad:0, medicalExpenses:0} => output {federalTax: 270799.10, stateTax:49250.00} WORKS 
 
-- t3: input: {income: 300000, filingStatus: "Individual", mortgage:0, studentLoad:10000, medicalExpenses:0} => output {federalTax: 70279.10, stateTax:14450.00}
+- t3: input: {income: 300000, filingStatus: "Individual", mortgage:0, studentLoad:10000, medicalExpenses:0} => output {federalTax: 70279.10, stateTax:14450.00} WORKS
 
-- t4: input: {income: 300000, filingStatus: "Joint", mortgage:0, studentLoad:1000, medicalExpenses:0} => output {federalTax: 55759.42, stateTax:14200.00}
+- t4: input: {income: 300000, filingStatus: "Joint", mortgage:0, studentLoad:1000, medicalExpenses:0} => output {federalTax: 55759.42, stateTax:14200.00} WORKS
 
-- t5: input: {income: 200, filingStatus: "Individual", mortgage:0, studentLoad:0, medicalExpenses:0} => output {federalTax: 0, stateTax:0}
-- t6: input: {income: 200, filingStatus: "Joint", mortgage:0, studentLoad:0, medicalExpenses:0} => output {federalTax: 0, stateTax:0}
+- t5: input: {income: 200, filingStatus: "Individual", mortgage:0, studentLoad:0, medicalExpenses:0} => output {federalTax: 0, stateTax:0} WORKS
+- t6: input: {income: 200, filingStatus: "Joint", mortgage:0, studentLoad:0, medicalExpenses:0} => output {federalTax: 0, stateTax:0} WORKS
 
-- t7: input: {income: 85000, filingStatus: "Joint", mortgage:0, studentLoad:0, medicalExpenses:10000} => output {federalTax: 6799.88, stateTax:3000.00}
+- t7: input: {income: 85000, filingStatus: "Joint", mortgage:0, studentLoad:0, medicalExpenses:10000} => output {federalTax: 6799.88, stateTax:3000.00} WORKS
 
-- t8: input: {income: 85000, filingStatus: "Individual", mortgage:0, studentLoad:0, medicalExpenses:10000} => output {federalTax: 10099.66, stateTax:3250.00}
+- t8: input: {income: 85000, filingStatus: "Individual", mortgage:0, studentLoad:0, medicalExpenses:10000} => output {federalTax: 10099.66, stateTax:3250.00} WORKS
 
-- t9: input: {income: 0, filingStatus: "Joint", mortgage:0, studentLoad:10000, medicalExpenses:10000} => output {federalTax: 0, stateTax:0}
+- t9: input: {income: 0, filingStatus: "Joint", mortgage:0, studentLoad:10000, medicalExpenses:10000} => output {federalTax: 0, stateTax:0} WORKS
 
-- t10: input: {income: 0, filingStatus: "Individual", mortgage:0, studentLoad:10000, medicalExpenses:10000} => output {federalTax: 0, stateTax:0}
+- t10: input: {income: 0, filingStatus: "Individual", mortgage:0, studentLoad:10000, medicalExpenses:10000} => output {federalTax: 0, stateTax:0} WORKS
